@@ -9,6 +9,35 @@ export const eventStats: EventStats[] = [
   { label: 'Business Visitors', value: '15,000+', icon: 'briefcase-outline', color: '#0D9488' },
 ];
 
+export const impactMetrics = [
+  { label: 'EV Buses Showcased', value: '45+', icon: '🚌', color: '#059669' },
+  { label: 'Green Tech Innovations', value: '120+', icon: '🌱', color: '#16A34A' },
+  { label: 'CO₂ Saved (tonnes)', value: '85', icon: '🌍', color: '#0D9488' },
+  { label: 'B2B Deals Initiated', value: '300+', icon: '🤝', color: '#2563EB' },
+];
+
+export const evShowcase = [
+  { id: 'ev1', name: 'Tata Starbus EV', type: 'Electric Bus', range: '250 km', charging: '2.5 hrs', capacity: '45 seats', exhibitor: 'Tata Motors', hall: 'Hall 1', highlight: true },
+  { id: 'ev2', name: 'Olectra K9', type: 'Electric Bus', range: '300 km', charging: '3 hrs', capacity: '40 seats', exhibitor: 'Olectra Greentech', hall: 'Hall 2', highlight: false },
+  { id: 'ev3', name: 'BYD K7M', type: 'Electric Midi Bus', range: '220 km', charging: '2 hrs', capacity: '28 seats', exhibitor: 'BYD India', hall: 'Hall 2', highlight: true },
+  { id: 'ev4', name: 'Switch EiV 12', type: 'Electric Bus', range: '280 km', charging: '2.5 hrs', capacity: '40 seats', exhibitor: 'Switch Mobility', hall: 'Hall 2', highlight: false },
+  { id: 'ev5', name: 'PMI Foton', type: 'Electric Bus', range: '200 km', charging: '2 hrs', capacity: '35 seats', exhibitor: 'PMI Electro', hall: 'Hall 2', highlight: false },
+];
+
+export const aiRecommendations = [
+  { id: 'rec1', type: 'session', title: 'EV Captains Roundtable', reason: 'Based on your interest in Electric Vehicles', icon: 'flash-outline', color: '#059669' },
+  { id: 'rec2', type: 'person', title: 'Priya Menon — NITI Aayog', reason: 'Policy expert matching your profile', icon: 'person-outline', color: '#7C3AED' },
+  { id: 'rec3', type: 'exhibitor', title: 'Olectra Greentech', reason: 'Top EV bus manufacturer in your sector', icon: 'business-outline', color: '#2563EB' },
+  { id: 'rec4', type: 'session', title: 'Smart Mobility Solutions', reason: 'Trending session with 85% interest match', icon: 'trending-up-outline', color: '#D97706' },
+];
+
+export const sponsorTiers = [
+  { tier: 'Principal Partner', sponsors: [{ id: 'sp1', name: 'GSRTC', logo: '' }] },
+  { tier: 'Gold Partners', sponsors: [{ id: 'sp2', name: 'Tata Motors', logo: '' }, { id: 'sp3', name: 'Ashok Leyland', logo: '' }] },
+  { tier: 'EV Partner', sponsors: [{ id: 'sp4', name: 'Olectra Greentech', logo: '' }, { id: 'sp5', name: 'BYD India', logo: '' }] },
+  { tier: 'Technology Partner', sponsors: [{ id: 'sp6', name: 'KPIT Technologies', logo: '' }, { id: 'sp7', name: 'Chalo', logo: '' }] },
+];
+
 export const floorMapZones: FloorMapZone[] = [
   { id: 'z1', name: 'Hall 1 — OEM & Buses', type: 'hall', exhibitorCount: 45, description: 'Bus manufacturers, chassis & body builders' },
   { id: 'z2', name: 'Hall 2 — EV & Green Mobility', type: 'hall', exhibitorCount: 38, description: 'Electric vehicles, charging infra, batteries' },
@@ -27,8 +56,8 @@ export const liveUpdates: LiveUpdate[] = [
     timestamp: '2026-07-09T08:00:00Z', priority: 'high', icon: 'megaphone-outline',
   },
   {
-    id: 'lu2', type: 'shuttle', title: 'Shuttle from Airport',
-    message: 'Free shuttle buses run every 30 min from Ahmedabad Airport to HEC Gandhinagar.',
+    id: 'lu2', type: 'shuttle', title: 'Airport Shuttle Active',
+    message: 'Free shuttle buses running every 30 min from Ahmedabad Airport to HEC.',
     timestamp: '2026-07-09T07:00:00Z', priority: 'medium', icon: 'bus-outline',
   },
   {
@@ -38,12 +67,12 @@ export const liveUpdates: LiveUpdate[] = [
   },
   {
     id: 'lu4', type: 'session_full', title: 'CEO Roundtable — Full',
-    message: 'The CEO Roundtable networking session is now fully booked. Waitlist available.',
+    message: 'The CEO Roundtable networking session is now fully booked. Waitlist open.',
     timestamp: '2026-07-09T11:00:00Z', priority: 'medium', icon: 'alert-circle-outline',
   },
   {
-    id: 'lu5', type: 'general', title: 'Charging Stations',
-    message: 'Free EV charging available at Parking Zone. See floor map for locations.',
+    id: 'lu5', type: 'general', title: 'EV Charging Available',
+    message: 'Free EV charging at Parking Zone. 12 DC fast chargers + 20 AC chargers.',
     timestamp: '2026-07-09T08:30:00Z', priority: 'low', icon: 'flash-outline',
   },
 ];
@@ -66,6 +95,6 @@ export const transportInfo: TransportInfo[] = [
   },
   {
     id: 't4', type: 'parking', name: 'On-site Parking',
-    description: '2000+ spots with EV charging at Parking Zone', status: 'running',
+    description: '2000+ spots · 12 DC fast + 20 AC EV chargers', status: 'running',
   },
 ];
